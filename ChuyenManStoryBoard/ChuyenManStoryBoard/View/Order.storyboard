@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OrderVC-->
+        <scene sceneID="xwu-Bw-DFb">
+            <objects>
+                <viewController storyboardIdentifier="orderID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UkI-tZ-Va1" customClass="OrderVC" customModule="ChuyenManStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="luF-Jm-pSV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJe-E9-Pqc">
+                                <rect key="frame" x="173.5" y="76" width="67.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="01B-U8-64g">
+                                <rect key="frame" x="0.0" y="395" width="414" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muốn gì" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5V-Ab-T7W">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D28-3q-9fK">
+                                        <rect key="frame" x="0.0" y="38" width="414" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRG-xG-YQy">
+                                        <rect key="frame" x="0.0" y="76" width="414" height="30"/>
+                                        <state key="normal" title="Order"/>
+                                        <connections>
+                                            <action selector="ClicktoPay:" destination="UkI-tZ-Va1" eventType="touchUpInside" id="BTA-xo-ooV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="01B-U8-64g" firstAttribute="centerY" secondItem="luF-Jm-pSV" secondAttribute="centerY" id="51S-NB-anA"/>
+                            <constraint firstItem="01B-U8-64g" firstAttribute="centerX" secondItem="luF-Jm-pSV" secondAttribute="centerX" id="HPW-F8-VG0"/>
+                            <constraint firstItem="IJe-E9-Pqc" firstAttribute="centerX" secondItem="luF-Jm-pSV" secondAttribute="centerX" id="avc-vQ-EOa"/>
+                            <constraint firstItem="IJe-E9-Pqc" firstAttribute="top" secondItem="YAF-Ks-KuN" secondAttribute="top" constant="32" id="eGg-fV-juA"/>
+                            <constraint firstItem="01B-U8-64g" firstAttribute="leading" secondItem="YAF-Ks-KuN" secondAttribute="leading" id="tct-gM-s74"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YAF-Ks-KuN"/>
+                    </view>
+                    <connections>
+                        <outlet property="orderTextField" destination="D28-3q-9fK" id="4I5-CT-byh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoB-xL-7Nv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

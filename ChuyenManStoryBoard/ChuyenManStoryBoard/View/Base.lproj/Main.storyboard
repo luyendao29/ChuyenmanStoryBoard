@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainVC" customModule="ChuyenManStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3Z-NV-YHA">
+                                <rect key="frame" x="177.5" y="74" width="59.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="yYS-j9-zkN">
+                                <rect key="frame" x="8" y="402" width="398" height="92"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="52a-oR-aG3">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="92"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFu-wk-Cd3" customClass="Button" customModule="ChuyenManStoryBoard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                                <color key="backgroundColor" red="0.12538677449999999" green="0.75442379709999996" blue="0.081884481009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Home"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="vV7-Ws-7eT" kind="show" id="NKX-lG-Vy2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWS-4L-rmk" customClass="Button" customModule="ChuyenManStoryBoard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="62" width="183" height="30"/>
+                                                <color key="backgroundColor" red="0.85620120183766413" green="0.89813512563705444" blue="0.29189343417511587" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="History"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Bcr-dN-UqN" kind="show" id="lBv-pK-be4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="2Mx-zU-jZ8">
+                                        <rect key="frame" x="215" y="0.0" width="183" height="92"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dru-fa-E7N" customClass="Button" customModule="ChuyenManStoryBoard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                                <color key="backgroundColor" red="0.034647882903477423" green="0.89813512563705444" blue="0.752665417921905" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Order"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="MwK-ZZ-5Sl" kind="show" id="DpV-NT-Mqc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzv-8K-EkR" customClass="Button" customModule="ChuyenManStoryBoard" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="62" width="183" height="30"/>
+                                                <color key="backgroundColor" red="0.89813512559999997" green="0.24097430750000001" blue="0.20656974189999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Pay"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="nextHome:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAB-gj-idV"/>
+                                                    <segue destination="PrY-eg-L7H" kind="show" id="DLr-ck-oCg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.89813512559999997" green="0.24097430750000001" blue="0.20656974189999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yYS-j9-zkN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9t3-GE-d5w"/>
+                            <constraint firstItem="t3Z-NV-YHA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="F2w-LJ-TRu"/>
+                            <constraint firstItem="yYS-j9-zkN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Uvx-We-VE7"/>
+                            <constraint firstItem="yYS-j9-zkN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="euA-yO-pNk"/>
+                            <constraint firstItem="t3Z-NV-YHA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vnB-fB-15C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--homeID-->
+        <scene sceneID="Frd-fB-pLP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="homeID" id="vV7-Ws-7eT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YD9-e2-AMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="-48"/>
+        </scene>
+        <!--orderID-->
+        <scene sceneID="xo1-Ar-yh9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Order" referencedIdentifier="orderID" id="MwK-ZZ-5Sl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljv-iL-NfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="204"/>
+        </scene>
+        <!--payID-->
+        <scene sceneID="aiW-Uq-4Y2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pay" referencedIdentifier="payID" id="PrY-eg-L7H" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dv0-yh-NYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="504"/>
+        </scene>
+        <!--historyID-->
+        <scene sceneID="bcH-sP-PBV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" referencedIdentifier="historyID" id="Bcr-dN-UqN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8w-pr-Ily" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="368"/>
+        </scene>
+    </scenes>
+</document>

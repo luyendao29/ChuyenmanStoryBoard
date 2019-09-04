@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PayVC-->
+        <scene sceneID="StE-yk-jM9">
+            <objects>
+                <viewController storyboardIdentifier="payID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6PU-Dm-9dL" customClass="PayVC" customModule="ChuyenManStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sol-5g-8B3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Jmp-m3-6Ut">
+                                <rect key="frame" x="0.0" y="363" width="414" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giỏ Hàng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azt-8w-4c2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mom-D4-oQB">
+                                        <rect key="frame" x="0.0" y="70" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxa-TZ-2TK">
+                                        <rect key="frame" x="0.0" y="140" width="414" height="30"/>
+                                        <state key="normal" title="Thanh Toán"/>
+                                        <connections>
+                                            <action selector="ClickedToHistory:" destination="6PU-Dm-9dL" eventType="touchUpInside" id="tTv-zZ-ijC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yo-gg-mIc">
+                                <rect key="frame" x="185.5" y="74" width="43" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Yo-gg-mIc" firstAttribute="top" secondItem="ooK-sY-Qdr" secondAttribute="top" constant="30" id="Vh9-RP-ILM"/>
+                            <constraint firstItem="Jmp-m3-6Ut" firstAttribute="leading" secondItem="ooK-sY-Qdr" secondAttribute="leading" id="XNZ-nG-Yt0"/>
+                            <constraint firstItem="Jmp-m3-6Ut" firstAttribute="centerX" secondItem="sol-5g-8B3" secondAttribute="centerX" id="Xxc-Rb-6qm"/>
+                            <constraint firstItem="5Yo-gg-mIc" firstAttribute="centerX" secondItem="sol-5g-8B3" secondAttribute="centerX" id="d3J-mH-eXJ"/>
+                            <constraint firstItem="Jmp-m3-6Ut" firstAttribute="centerY" secondItem="sol-5g-8B3" secondAttribute="centerY" id="kk3-RX-D3C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ooK-sY-Qdr"/>
+                    </view>
+                    <connections>
+                        <outlet property="payLabel" destination="mom-D4-oQB" id="zOE-k2-Wfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dD2-0d-e38" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-194"/>
+        </scene>
+    </scenes>
+</document>
